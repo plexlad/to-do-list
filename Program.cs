@@ -6,22 +6,19 @@
 string animationFrame = "|";
 for(int i = 0; i < 100; i++)
 {
-    switch(i % 4)
+    switch(i % 3)
     {
         case 0:
-            animationFrame = "|";
+            animationFrame = ".";
             break;
         case 1:
-            animationFrame = "/";
+            animationFrame = "..";
             break;
         case 2:
-            animationFrame = "-";
-            break;
-        case 3:
-            animationFrame = "\\";
+            animationFrame = "...";
             break;
     }
     
-    Console.Write($"\rLoading {animationFrame} ");
+    Console.Write($"\rLoading{animationFrame} ");
     Thread.Sleep(500);
 }
